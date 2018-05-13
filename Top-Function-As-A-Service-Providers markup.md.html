@@ -1,0 +1,37 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Untitled Document.md</title><style></style></head><body id="preview">
+<h1><a id="Top_Function_As_A_Service_Faas_Providers_0"></a>Top Function As A Service (Faas) Providers</h1>
+<h2><a id="What_Is_FaaS_2"></a>What Is FaaS?</h2>
+<p><strong>Function as a Service (FaaS)</strong> is relatively new service of cloud computing which provides a platform that helps the users to develop, manage and run functionalities of their applications without the complexed ways of infrastructure building and maintenance which is something that is always followed when launching an app. FaaS in a brand-new development in cloud computing and it was presented in the world in October 2014 by the <a href="https://hook.io">hook.io</a> website. Since then, numerous FaaS providers came along like AMS Lambda, Google Cloud, Microsoft Azure, IBM/Apache’s Open Whisk which is an open source from 2016 and Oracle Cloud in 2017 also being an open source.</p>
+<h2><a id="Advantages_And_Disadvantages_Of_Using_FaaS_6"></a>Advantages And Disadvantages Of Using FaaS</h2>
+<h3><a id="FaaS_advantages_8"></a>FaaS advantages:</h3>
+<ol>
+<li><em>Prices</em> – You will need to pay only for the resources you’ve used.</li>
+<li><em>Infrastructure management</em> – Initial investment in buying servers and configuring them is expensive. Furthermore, you’ll need to invest in specialized staff.</li>
+<li><em>Infrastructure security</em> – Worrying about Linux or Tomcat update is in the past. Equifax breach where a security update had a significant toll on their businesses is behind us.</li>
+<li><em>Easy Deployment</em> – developers don’t have to wait anymore for OPS, DBA, etc.</li>
+<li><em>Scalable &amp; HA</em> – FaaS providers like Google, Amazon, and Microsoft are scaling much better than anyone else.</li>
+</ol>
+<h3><a id="FaaS_disadvantages_16"></a>FaaS disadvantages:</h3>
+<ol>
+<li><em>Latency</em> – It’s not a good idea to use FaaS for Fintech high-performance applications since FaaS will add more latency.</li>
+<li><em>Limits</em> – Execution time is 300s on AWS and 500s on Google, while memory on AWS is 1500MB.</li>
+<li><em>No local data storage</em> – for most of your data this is a good thing, but your application needs to be stateless nevertheless, and that is a limit to it.</li>
+<li><em>Debugging and monitoring</em> – There are growing solutions for the issue on how to debug or test locally and offline, but it’s still not perfected.</li>
+<li><em>There are always risks when using new technologies.</em> Lousy stability and frameworks, lack of tools, libraries and so on.</li>
+<li><em>Vendor lock-in</em> – If anything happens to your FaaS providers, in the example, the company shuts down or even bankruptcy, you will have a severe problem.<br>
+Fundamental Differences Between The Leading FaaS Providers</li>
+</ol>
+<p>Top FaaS providers of today are offering the same services with some differences, and we will try and compare them in this section, so you can decide which one suits you better while considering the language support they offer, the 3rd party language support, the monitoring systems they use and their limits. At the end of the main differences section, you will find a separate part of pricing models for each provider.</p>
+<p><strong>AWS Lambda</strong></p>
+<p><strong>AWS Lambda</strong> language support is vast. It supports several languages like Node.js, Java, C#, and Python. Language support with the 3rd party is Golang by using Node.js shim. Dashbird and Cloudwatch are AWS Lambda’s monitoring systems. There are some limitations in AWS Lambda that we will go through. Memory allocation range is min. 128 MB and max. 1536 MB. Ephemeral disk capacity is (“/tmp” space): 512 MB, while maximum execution duration per request is 300 seconds.</p>
+<p><strong>Google Functions</strong> supports Node.js language and doesn’t have any 3rd party language support as the others do. Google Functions comes with a Stackdriver monitoring system. It is limited to 1000 functions with maximum function duration of 540 seconds. Function calls per second are 1 million per 100 seconds.</p>
+<p><strong>Microsoft Azure Functions</strong> supports even more languages like Node.js, C#, F#, Python, PHP, and Java. The 3rd party language support can run anything with batch files. Azure Application Insights is Azure’s monitoring system. Azure is limited to only ten concurrent executions per one function. There are no limits on maximum execution time limit.</p>
+<p><strong>IBM Apache OpenWhisk Functions</strong> supports native languages like Node.js, Swift, Java, PHP, Go, and Python. You can use any other programming language (the 3rd party language) you need just by providing it to the Docker container. OpenWhisk uses Dashboard as a monitoring system. There are some limits in OpenWhisk. It is limited to package nesting which is not allowed meaning that the package can’t contain another package, but packages can include Actions and Feeds.</p>
+<h2><a id="Price_Range_Between_The_Top_FaaS_Providers_38"></a>Price Range Between The Top FaaS Providers</h2>
+<p>Prices between these FaaS providers we’ve previously mentioned are different with several different models you could choose from to pay for services provided to you. Depending on how you use it and how frequent, also as for how long, this section should offer you the best insight of which FaaS provider you should choose.</p>
+<p><strong>AWS Lambda’s</strong> pricing is set on $0.20 per million requests, considering that 1 million requests per month are for free. Depending on your needs, choosing AWS Lambda can be a good option.</p>
+<p><strong>Google Function’s</strong> pricing is set on three different models. The 1st one is $0.40 per million invocations, but consider that 2 million invocations are for free. The 2nd price model is $0.0000025 per GB-sec with 400,00 GB-sec per month that comes for free. It brings us to the 3rd price model which is $0.0000100/GHz-sec with 200,000 GHz-sec per month that also comes for free.</p>
+<p><strong>Microsoft Azure Function</strong> uses two different pricing models. The 1st one is $0.000016/GBs with 400,000 GBs per month that comes for free. The 2nd model is $0.20 per million executions, with 1 million executions per month for free.</p>
+<p><strong>IBM Apache OpenWhisk Function</strong> has the basic Cloud Function rate which is $0.000017 per second of execution, per GB of memory allocated. API Gateway rate is free with no limits.</p>
+<p>The conclusion would be that the FaaS is proposing a type of architecture that the developers need to fit into. It’s a whole new way of building, managing and deploying code. A brand-new way, similar to microservices, with many various benefits for both big and small applications. The most considerable advantage for architecture that is based on serverless is all around the developers’ availability or non-availability, respectfully. Nowadays, it is quite hard finding a good developer and much harder finding good developers specified for the specific programming language. FaaS is quite flexible, and this brings us to its disadvantages regarding the productivity. Nevertheless, being short on developers is a far bigger problem.</p>
+</body></html>
